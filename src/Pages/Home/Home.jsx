@@ -72,7 +72,7 @@ const Home = () => {
                         onMouseMove={(e) => handleMouseMove(e, 'contact-link')}
                         onMouseLeave={() => handleMouseRemove('contact-link')}
                     >
-                        Contact me
+                        Personal <br /> Journey
                     </h2>
                     <h1>Developer,<br /> Designer & Engineer</h1>
                 </div>
@@ -141,7 +141,9 @@ const Home = () => {
                     ))}
                 </div>
             </div>
+            {/* <div className="Timeline-frame">
 
+            </div> */}
 
             <div className="Projects Frame">
                 <div className="Heading">
