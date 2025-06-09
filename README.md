@@ -1,8 +1,26 @@
-# React + Vite
+# React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with **React** and **Vite** for fast, modern web development.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + Vite setup with Hot Module Replacement (HMR)
+- Fast Refresh using official Vite React plugins
+- ESLint integrated for code quality
+- Simple and clean project structure
+
+## Setup
+
+### Requirements
+
+- Node.js (v14+)
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/react-portfolio.git
+cd react-portfolio
+npm install
+# or
+yarn
