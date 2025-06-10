@@ -63,6 +63,7 @@ const Home = () => {
         <div className="Home">
             <div className="Notice">
                 <h3>Notice - This portfolio is currently static as it's still under development.</h3>
+                <h3>Currently the website is only optimized for bigger screens</h3>
             </div>
             <div className="Hero">
                 <div className="Other-parts">
