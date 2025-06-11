@@ -14,7 +14,7 @@ A personal portfolio website built with **React** and **Vite** for fast, modern 
 ### Requirements
 
 - Node.js (v14+)
-- npm or yarn
+- npm
 
 ### Installation
 
@@ -22,5 +22,3 @@ A personal portfolio website built with **React** and **Vite** for fast, modern 
 git clone https://github.com/your-username/react-portfolio.git
 cd react-portfolio
 npm install
-# or
-yarn
