@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Lenis from "@studio-freight/lenis";
 import { motion } from "framer-motion";
-import CustomCursor from "./Components/CustomCursor"; // Import the cursor component
+import CustomCursor from "./Components/CustomCursor";
+import PersonalDetails from "./Pages/PersonalDetails/PersonalDetails";
 
 const App = () => {
   const [preloader, setPreloader] = useState(true);
@@ -62,7 +64,10 @@ const App = () => {
           className="main-container"
         >
           <Navbar />
-          <Home />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/PersonalDetails" element={<PersonalDetails />} />
+          </Routes>
         </motion.div>
       )}
     </>

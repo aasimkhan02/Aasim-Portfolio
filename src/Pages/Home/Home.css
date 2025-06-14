@@ -40,7 +40,7 @@
     min-height: 18rem;
     padding: 0 8% 0 15%;
 }
-.Home .Other-parts h2{
+.Home .Other-parts button{
     background-color: transparent;
     border: 2px solid black;
     border-radius: 100%;
@@ -55,12 +55,15 @@
     transition: 0.7s ease-in-out;
     transition: 0.3s ease-in-out;
 }
-.Home .Other-parts h2:hover{
+.Home .Other-parts button:hover{
     background-color: #FF3F00;
     border: 2px solid #FF3F00;
     color: black;
 }
-
+.Home .Other-parts button h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
 .Home .Other-parts h1{
     font-size: 2.1rem;
     font-weight: 300;

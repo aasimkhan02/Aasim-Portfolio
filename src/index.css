@@ -22,7 +22,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url('./assets/Grey.jpg');
   background-position: center;
   background-repeat: repeat;
   background-size: cover;

@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './Home.css';
 import '@lottiefiles/lottie-player';
 import HealthWave from './../../assets/Doctor.jpg'
-import AXWeather from './../../assets/Weather.jpg'
-import QuizElite from './../../assets/Quiz.jpg'
 import Marquee from "react-fast-marquee";
 import person from './../../assets/Person1.jpg'
 import Model from './../../assets/Machine learning model.jpg'
-import { Link } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const Home = () => {
+    const navigate = useNavigate();
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [clickedIndex, setClickedIndex] = useState(null);
     const [transform, setTransform] = useState({});
@@ -61,20 +61,17 @@ const Home = () => {
 
     return (
         <div className="Home">
-            <div className="Notice">
-                <h3>Notice - This portfolio is currently static as it's still under development.</h3>
-                <h3>Currently the website is only optimized for bigger screens</h3>
-            </div>
             <div className="Hero">
                 <div className="Other-parts">
-                    <h2
-                        className='contact-link'
-                        style={{ transform: transform['contact-link'] }}
-                        onMouseMove={(e) => handleMouseMove(e, 'contact-link')}
-                        onMouseLeave={() => handleMouseRemove('contact-link')}
+                    <button
+                        className='Journey-link'
+                        style={{ transform: transform['Journey-link'] }}
+                        onMouseMove={(e) => handleMouseMove(e, 'Journey-link')}
+                        onMouseLeave={() => handleMouseRemove('Journey-link')}
+                        onClick={() => navigate('/personalDetails')}
                     >
-                        Personal <br /> Journey
-                    </h2>
+                        <h2>Personal <br /> Journey</h2>
+                    </button>
                     <h1>Developer,<br /> Designer & Engineer</h1>
                 </div>
                 <Marquee className='hero-marquee' speed={130}>
