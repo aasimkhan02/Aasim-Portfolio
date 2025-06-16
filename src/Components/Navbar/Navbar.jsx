@@ -6,6 +6,7 @@ import './Navbar.css';
 const Navbar = () => {
     const [transform, setTransform] = useState({});
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    
 
     const handleMouseMove = (e, index) => {
         if (!isMenuOpen) {
@@ -35,6 +36,8 @@ const Navbar = () => {
     const closeMenu = () => {
         setIsMenuOpen(false);
     };
+
+    
 
     return (
         <div className='Navbar'>

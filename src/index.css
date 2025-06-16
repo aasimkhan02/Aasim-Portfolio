@@ -111,7 +111,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f2edea;
+  background-color: white;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -125,7 +125,7 @@ body {
 
 body {
   scrollbar-width: thin;
-  scrollbar-color: #f2edea;
+  scrollbar-color: #ffffff;
 }
 
 .custom-cursor {

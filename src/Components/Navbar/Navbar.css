@@ -1,6 +1,6 @@
 .Navbar {
     width: 100%;
-    height: 100px;
+    height: 80px;
     overflow-y: hidden;
     display: flex;
     align-items: center;       
@@ -10,22 +10,23 @@
     color: black;
     flex-wrap: wrap; 
     margin: 0;
-    background-color: #f2edea;
+    background-color: white;
 }
 
 .logo {
     font-family: 'Tilt Warp', sans-serif;
     letter-spacing: 0.125rem;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 500;
     transition: transform 0.2s ease-in-out;
+    color: #FF3F00;
 }
 
 .Nav-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 200;
     letter-spacing: 0.0625rem;
     font-family: "Outfit", sans-serif;
@@ -33,6 +34,7 @@
     cursor: pointer;
     position: relative;
     margin-top: 0.5rem;
+    background-color: white;
 }
 
 .Nav-list h4 {
@@ -58,11 +60,12 @@
     cursor: pointer;
 }
 
-.Resume h1 {
-    font-size: 1.7rem;
+.Resume h2 {
+    font-size: 1.4rem;
     font-family: 'Tilt Warp', sans-serif;
     letter-spacing: 0.125rem;
     font-weight: 500;
+    color: #FF3F00;
 }
 
 .arrow-icon {
@@ -199,4 +202,9 @@
     .Nav-list {
         width: 100%;
     }
+}
+
+.navbar-black{
+    background-color: black;
+    color: white;
 }

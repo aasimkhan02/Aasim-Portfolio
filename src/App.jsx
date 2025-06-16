@@ -5,7 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Lenis from "@studio-freight/lenis";
 import { motion } from "framer-motion";
 import CustomCursor from "./Components/CustomCursor";
-import PersonalDetails from "./Pages/PersonalDetails/PersonalDetails";
+import AboutPage from './Pages/About/AboutPage'
 
 const App = () => {
   const [preloader, setPreloader] = useState(true);
@@ -66,7 +66,7 @@ const App = () => {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/PersonalDetails" element={<PersonalDetails />} />
+            <Route path="/aboutpage" element={<AboutPage />} />
           </Routes>
         </motion.div>
       )}

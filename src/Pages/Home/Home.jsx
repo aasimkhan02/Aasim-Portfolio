@@ -6,6 +6,7 @@ import Marquee from "react-fast-marquee";
 import person from './../../assets/Person1.jpg'
 import Model from './../../assets/Machine learning model.jpg'
 import { useNavigate } from 'react-router-dom';
+import Profile from './../../assets/Profile.jpg'
 
 
 
@@ -68,7 +69,7 @@ const Home = () => {
                         style={{ transform: transform['Journey-link'] }}
                         onMouseMove={(e) => handleMouseMove(e, 'Journey-link')}
                         onMouseLeave={() => handleMouseRemove('Journey-link')}
-                        onClick={() => navigate('/personalDetails')}
+                        onClick={() => navigate('/aboutpage')}
                     >
                         <h2>Personal <br /> Journey</h2>
                     </button>

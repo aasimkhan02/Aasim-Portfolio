@@ -1,0 +1,116 @@
+.AboutPage{
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+.About-hero{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 9% 0;
+}
+.About-hero h1{
+    font-size: 4.2rem;
+    width: 70%;
+    font-weight: 600;
+    line-height: 1;
+}
+.About-hero h1 span{
+    color: #FF3F00;
+}
+.About-hero h4{
+    width: 60%;
+    text-align: right;
+    font-weight: 400;
+    color: #595959;
+    font-size: 1rem;
+}
+.About-hero .about-links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.About-hero h4 button{
+    background-color: transparent;
+    border: none;
+    width: 100px;
+    height: 32px;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+    color: #595959;
+}
+.About-hero h4 button:hover{
+    background-color: #e3e3e3;
+    color: black;
+    border-radius: 15px;
+}
+.AboutPage .Can-help-with{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.AboutPage .Can-help-with h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.My-domains {
+    width: 100%;
+    height: 100%;
+    background-color: #FF3F00;
+    display: flex;
+    color: white;
+}
+.My-domains > div {
+    flex: 1; 
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 6% 4%;
+}
+.My-domains hr{
+    width: 100%;
+}
+.My-domains p{
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+}
+.domain-heading{
+    font-size: 2rem !important; 
+    width: 95%;
+    text-align: left;
+    font-weight: bold;
+}
+.My-domains h2{
+    font-size: 1.5rem;
+    margin-top: 30px;
+    font-weight: 300;
+}
+.Timeline{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+}
+.Timeline h1{
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+}

@@ -16,10 +16,9 @@
     align-items: center;
     justify-content: center;
     color: black;
-    border-bottom: 5rem solid transparent;
     gap: 1rem;
-    background-color: #f2edea;
-    padding-top: 1%;
+    background-color: #ffffff;
+    padding-top: 2%;
 }
 .hero-marquee h1{
     font-size: 13rem;
@@ -118,11 +117,10 @@
     z-index: 2;
     width: 100%;
     height: auto;
-    background-color: #f2edea;
+    background-color: #ffffff;
     gap: 1.2rem;
-    border-bottom: 1rem solid #f2edea;
     padding: 8rem 10% 3rem 10%;
-    background-color: #f2edea;
+    background-color: #ffffff;
 }
 .About .Main-content{
     font-size: 1.8rem;
@@ -196,15 +194,14 @@
     }
 }
 .Skill{
-    background-color: #f2edea;
+    background-color: white;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     z-index: 2;
     width: 100%;
     height: auto;
-    border-bottom: 10rem solid #f2edea;
-    border-top: 5rem solid #f2edea;
+    padding: 10% 0 13% 0;
 }
 
 .Skill .Heading{
