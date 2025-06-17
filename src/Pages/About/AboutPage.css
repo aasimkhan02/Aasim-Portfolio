@@ -114,3 +114,9 @@
     width: 100%;
     text-align: center;
 }
+.vertical-line {
+    width: 2px;
+    height: 150px;
+    background-color: #ccc;
+    margin: 0 auto;
+}

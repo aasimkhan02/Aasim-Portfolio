@@ -40,6 +40,7 @@ const About = () => {
             </div>
             <div className="Timeline">
                 <h1>My Timeline</h1>
+                <div class="vertical-line"></div>
             </div>
         </div>
     )
