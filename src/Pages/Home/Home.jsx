@@ -3,7 +3,7 @@ import './Home.css';
 import '@lottiefiles/lottie-player';
 import HealthWave from './../../assets/Doctor.jpg'
 import Marquee from "react-fast-marquee";
-import person from './../../assets/Person1.jpg'
+import person from './../../assets/Personal Photo.png'
 import Model from './../../assets/Machine learning model.jpg'
 import { useNavigate } from 'react-router-dom';
 import Profile from './../../assets/Profile.jpg'
@@ -71,7 +71,7 @@ const Home = () => {
                         onMouseLeave={() => handleMouseRemove('Journey-link')}
                         onClick={() => navigate('/aboutpage')}
                     >
-                        <h2>Personal <br /> Journey</h2>
+                        <h2>About me</h2>
                     </button>
                     <h1>Developer,<br /> Designer & Engineer</h1>
                 </div>
