@@ -6,6 +6,7 @@ import Lenis from "@studio-freight/lenis";
 import { motion } from "framer-motion";
 import CustomCursor from "./Components/CustomCursor";
 import AboutPage from './Pages/About/AboutPage'
+import ProjectPage from './Pages/Projects/ProjectsPage'
 
 const App = () => {
   const [preloader, setPreloader] = useState(true);
@@ -67,6 +68,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/aboutpage" element={<AboutPage />} />
+            <Route path='/projectpage' element={<ProjectPage />}></Route>
           </Routes>
         </motion.div>
       )}
