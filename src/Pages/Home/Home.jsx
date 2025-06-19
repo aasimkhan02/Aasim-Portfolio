@@ -8,6 +8,7 @@ import Model from './../../assets/Machine learning model.jpg'
 import { useNavigate } from 'react-router-dom';
 import Profile from './../../assets/Profile.jpg'
 import Modelhq from './../../assets/Modelhq.jpg'
+import healthwave from './../../assets/healthwave2.jpg'
 
 
 
@@ -172,6 +173,7 @@ const Home = () => {
                                 </ul>
                             </div>
                         </div>
+                        <img src={healthwave} alt="" className='Project-demo' />
                     </div>
                     <div className="ModelHQ">
                         <img src={Model} alt="" />
