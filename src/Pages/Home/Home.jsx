@@ -7,6 +7,7 @@ import person from './../../assets/Personal Photo.png'
 import Model from './../../assets/Machine learning model.jpg'
 import { useNavigate } from 'react-router-dom';
 import Profile from './../../assets/Profile.jpg'
+import Modelhq from './../../assets/Modelhq.jpg'
 
 
 
@@ -140,9 +141,6 @@ const Home = () => {
                     ))}
                 </div>
             </div>
-            {/* <div className="Timeline-frame">
-
-            </div> */}
 
             <div className="Projects Frame">
                 <div className="Heading">
@@ -181,10 +179,10 @@ const Home = () => {
                             <div className="project-title">
                                 <p><span style={{fontWeight: "bold"}}>ModelHQ </span>- An interactive platform offering diverse machine 
                                 learning models with code walkthroughs and predictive insights to empower data-driven decisions.</p>
-                                <h2 style={{fontWeight: 400, color: '#3e3e3e'}}>Personal Project • 2025</h2>
+                                <h2 style={{fontWeight: 400, color: '#b5b5b5'}}>Personal Project • 2025</h2>
                             </div>
                             <div className="project-description">
-                                <p style={{fontSize: 21, color: '#3e3e3e'}}>ModelHQ is a full-stack platform built to make machine learning accessible and educational. It allows users to run predictive models — like breast cancer detection and employee attrition — using their own data, while exploring detailed, line-by-line code walkthroughs. With a clean UI and focus on transparency, ModelHQ helps users understand and apply machine learning with confidence.
+                                <p style={{fontSize: 21, color: '#b5b5b5'}}>ModelHQ is a full-stack platform built to make machine learning accessible and educational. It allows users to run predictive models — like breast cancer detection and employee attrition — using their own data, while exploring detailed, line-by-line code walkthroughs. With a clean UI and focus on transparency, ModelHQ helps users understand and apply machine learning with confidence.
 Designed for both beginners and enthusiasts, the platform simplifies complex ML workflows into interactive, meaningful experiences.
                                 </p>
                                 <ul className="project-techstack">
@@ -195,9 +193,17 @@ Designed for both beginners and enthusiasts, the platform simplifies complex ML 
                                 </ul>
                             </div>
                         </div>
+                        <img src={Modelhq} alt="" className='Project-demo' />
                     </div>
                 </div>
-                <div className="blank-space"></div>
+                <div className="More-projects">
+                    <h1>Checkout More Projects</h1>
+                    <button className='Project-link'
+                        style={{ transform: transform['Project-link'] }}
+                        onMouseMove={(e) => handleMouseMove(e, 'Project-link')}
+                        onMouseLeave={() => handleMouseRemove('Project-link')}
+                        onClick={() => navigate('/projectpage')}>Projects</button>
+                </div>
             </div>
             <div className="Contact-me">
                 <h1>Let's Work <br/> Together</h1>
