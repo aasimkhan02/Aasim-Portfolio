@@ -1,5 +1,7 @@
 import React from 'react'
 import './AboutPage.css'
+import Profile from "./../../assets/hackathon enchanced.jpg"
+import gsocLogo from './../../assets/google-summer-code-seeklogo.svg'
 
 const About = () => {
     return (
@@ -38,6 +40,16 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <div className="Gsoc-frame">
+                <img src={Profile} alt="" className='Profilepicture'/>
+                <div className="frame-content">
+                    <img src={gsocLogo} alt="" className='Gsoclogo'/>
+                    <h1>Google Summer of code 2025</h1>
+                    <p>Contributed to an open-source scientific computing project as part of GSoC 2025.  
+                    Wrote production-ready R code, improved data pipelines, and collaborated with mentors worldwide.</p>
+                </div>
+            </div>
+            
         </div>
     )
 }
