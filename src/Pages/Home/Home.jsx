@@ -264,7 +264,7 @@ Designed for both beginners and enthusiasts, the platform simplifies complex ML 
                                 <span 
                                     onMouseEnter={() => setFaqHover(idx)}
                                     onMouseLeave={() => setFaqHover(null)}
-                                    style={{ color: '#808080', 
+                                    style={{
                                         fontWeight: 400, 
                                         marginRight: 12, fontSize: '1.8rem',
                                         color:
