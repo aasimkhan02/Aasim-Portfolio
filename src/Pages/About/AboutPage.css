@@ -109,7 +109,7 @@
 .Gsoc-frame{
     width: 100%;
     height: auto;
-    padding: 15% 10%;
+    padding: 15% 10% 10% 10%;
     display: flex;
     justify-content: center;
     flex-direction: row;

@@ -18,7 +18,8 @@ const Home = () => {
     const [clickedIndex, setClickedIndex] = useState(null);
     const [transform, setTransform] = useState({});
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
-    
+    const [openFAQ, setOpenFAQ] = useState(null);
+    const [faqHover, setFaqHover] = useState(null);
 
     const handleMouseMove = (e, index) => {
         const rect = e.target.getBoundingClientRect();
@@ -61,6 +62,34 @@ const Home = () => {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    const faqs = [
+        {
+            question: "What kind of projects do you work on?",
+            answer: "I focus on building practical tools, whether it's a machine learning model, an internal automation system, or a full-stack web application. I like working on things that are useful, clean, and actually get used."
+        },
+        {
+            question: "What tech stack and tools do you use?",
+            answer: "I work mainly with Python, React, Django, and FastAPI. I also use R for scientific computing, and rely on Git, Docker, and Linux to keep everything efficient and stable."
+        },
+        {
+            question: "Do you work remotely or onsite?",
+            answer: "I currently work remotely and I'm comfortable collaborating across time zones. Most of my experience, including GSoC, has been with fully remote, asynchronous teams."
+        },
+        {
+            question: "Are you open to freelance or collaboration work?",
+            answer: "Yes, I’m always open to new opportunities if the project is interesting. I especially enjoy working on developer tools, data platforms, or anything that involves building something useful from scratch."
+        },
+        {
+            question: "How can I start a new project with you?",
+            answer: "Feel free to reach out through the contact form or message me on LinkedIn or GitHub. I'm quick to reply if it's a genuine message."
+        }
+    ];
+
+
+    const handleFAQClick = (idx) => {
+        setOpenFAQ(openFAQ === idx ? null : idx);
+    };
 
     return (
         <div className="Home">
@@ -207,6 +236,75 @@ Designed for both beginners and enthusiasts, the platform simplifies complex ML 
                         onClick={() => navigate('/projectpage')}>Projects</button>
                 </div>
             </div>
+            <div className="FAQS-frame">
+                <h2>Frequently asked questions</h2>
+                <div className="faqs-list simple-faq">
+                    {faqs.map((faq, idx) => (
+                        <div key={idx}>
+                            <div
+                                className="faq-question-simple"
+                                onClick={() => handleFAQClick(idx)}
+                                onMouseEnter={() => setFaqHover(idx)}
+                                onMouseLeave={() => setFaqHover(null)}
+                                style={{
+                                    cursor: 'pointer',
+                                    fontWeight: 300,
+                                    fontSize: '1.8rem',
+                                    color:
+                                        faqHover === null
+                                            ? 'white'
+                                            : faqHover === idx || openFAQ === idx
+                                                ? 'white'
+                                                : '#626262',
+                                    margin: '1.5rem 0 0.5rem 0',
+                                    transition: 'color 0.2s',
+                                    paddingBottom: '0.5rem',
+                                }}
+                            >
+                                <span 
+                                    onMouseEnter={() => setFaqHover(idx)}
+                                    onMouseLeave={() => setFaqHover(null)}
+                                    style={{ color: '#808080', 
+                                        fontWeight: 400, 
+                                        marginRight: 12, fontSize: '1.8rem',
+                                        color:
+                                                faqHover === null
+                                                    ? '#808080'
+                                                    : faqHover === idx || openFAQ === idx
+                                                        ? '#808080'
+                                                        : '#626262',
+                                        }}>
+                                    {String(idx + 1).padStart(2, '0')}
+                                </span>
+                                {faq.question}
+                            </div>
+                            {openFAQ === idx && (
+                                <div
+                                    className="faq-answer-simple"
+                                    onMouseEnter={() => setFaqHover(idx)}
+                                    onMouseLeave={() => setFaqHover(null)}
+                                    style={{
+                                        margin: '0.5rem 0rem 1.5rem 2.5rem',
+                                        color:
+                                            faqHover === null
+                                                ? '#808080'
+                                                : faqHover === idx || openFAQ === idx
+                                                    ? '#808080'
+                                                    : '#626262',
+                                        fontSize: '1.2rem',
+                                        fontWeight: 300,
+                                        lineHeight: 1.6,
+                                        animation: 'fadeIn 0.3s',
+                                        transition: 'color 0.2s',
+                                    }}
+                                >
+                                    {faq.answer}
+                                </div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+            </div>
             <div className="Contact-me">
                 <h1>Let's Work <br/> Together</h1>
                 <div className="contact">
@@ -233,6 +331,7 @@ Designed for both beginners and enthusiasts, the platform simplifies complex ML 
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };
