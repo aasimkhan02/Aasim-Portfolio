@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const [transform, setTransform] = useState({});
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    
+    const navigate = useNavigate();
 
     const handleMouseMove = (e, index) => {
         if (!isMenuOpen) {
@@ -46,6 +47,7 @@ const Navbar = () => {
                 style={{ transform: transform['logo'] }}
                 onMouseMove={(e) => handleMouseMove(e, 'logo')}
                 onMouseLeave={() => handleMouseLeave('logo')}
+                onClick={() => navigate('/')}
             >
                 Aasim
             </h2>
@@ -61,12 +63,17 @@ const Navbar = () => {
                 </div>
                 <h1 className='Nav-text'>Navigation Menu</h1>
                 <hr />
-                {['About', 'Skills', 'Projects'].map((item, index) => (
+                {['About', 'Projects', 'Contact'].map((item, index) => (
                     <h4
                         key={index}
-                        style={{ transform: transform[index] }}
+                        style={{ transform: transform[index], cursor: 'pointer' }}
                         onMouseMove={(e) => handleMouseMove(e, index)}
                         onMouseLeave={() => handleMouseLeave(index)}
+                        onClick={() => {
+                            closeMenu();
+                            if (item === 'About') navigate('/aboutpage');
+                            if (item === 'Projects') navigate('/projectpage');
+                        }}
                     >
                         {item}
                     </h4>

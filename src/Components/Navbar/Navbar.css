@@ -20,6 +20,7 @@
     font-weight: 500;
     transition: transform 0.2s ease-in-out;
     color: #FF3F00;
+    cursor: pointer;
 }
 
 .Nav-list {

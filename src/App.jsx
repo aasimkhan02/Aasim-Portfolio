@@ -7,6 +7,9 @@ import { motion } from "framer-motion";
 import CustomCursor from "./Components/CustomCursor";
 import AboutPage from './Pages/About/AboutPage'
 import ProjectPage from './Pages/Projects/ProjectsPage'
+import HealthWave from "./Pages/Projects/HealthWave/HealthWave";
+import AXWeather from "./Pages/Projects/AXWeather/AXWeather";
+import ModelHq from "./Pages/Projects/ModelHq/ModelHq";
 
 const App = () => {
   const [preloader, setPreloader] = useState(true);
@@ -69,6 +72,9 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/aboutpage" element={<AboutPage />} />
             <Route path='/projectpage' element={<ProjectPage />}></Route>
+            <Route path="/projectpage/healthwave" element={<HealthWave />} />
+            <Route path="/projectpage/axweather" element={<AXWeather />} />
+            <Route path="/projectpage/modelhq" element={<ModelHq />} />
           </Routes>
         </motion.div>
       )}
