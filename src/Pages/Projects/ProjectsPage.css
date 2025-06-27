@@ -1,0 +1,15 @@
+.ProjectPage{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+.ProjectPage h1{
+    font-weight: 400;
+    font-size: 4.5rem;
+    width: 100%;
+    padding: 9% 15%;
+}
