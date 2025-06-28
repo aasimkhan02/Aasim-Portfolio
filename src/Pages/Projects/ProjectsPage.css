@@ -1,15 +1,62 @@
 .ProjectPage{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 5%;
+    padding: 5% 0 7% 0;
+    margin: 0;
 }
 .ProjectPage h1{
     font-weight: 400;
-    font-size: 4.5rem;
+    font-size: 5.2rem;
     width: 100%;
-    padding: 9% 15%;
+    line-height: 1;
+    padding: 3% 15%;
+}
+.Project-categories{
+    width: 100%;
+    display: flex;
+    padding: 0 15%;
+    flex-direction: row;
+    gap: 15px;
+}
+.Project-categories button{
+    padding: 3% 5%;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1.5px solid #d6d6d6;
+    font-size: 1rem;
+    transition: 0.5s ease-in-out;
+}
+.Project-categories button:hover{
+    background-color: black;
+    color: white;
+}
+.Project-categories button.active {
+    background-color: black;
+    color: white;
+}
+.All-Projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 7% 0;
+    height: auto;
+    background-color: white;
+}
+.All-Projects .HealthWave{
+    width: 100%;
+    height: 100%;
+    border-top: 1.4px solid #d6d6d6;
+    border-bottom: 1.4px solid #d6d6d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0;
+}
+.All-Projects .HealthWave img{
+    width: 90%;
+    height: 30%
 }
