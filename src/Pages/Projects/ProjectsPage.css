@@ -8,7 +8,7 @@
     padding: 5% 0 7% 0;
     margin: 0;
 }
-.ProjectPage h1{
+.ProjectPage .ProjectPageHeadline{
     font-weight: 400;
     font-size: 5.2rem;
     width: 100%;
@@ -54,9 +54,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2% 0;
+    padding: 2% 2% 4% 2%;
+    flex-direction: column;
 }
 .All-Projects .HealthWave img{
-    width: 90%;
-    height: 30%
+    width: 100%;
+}
+.project-details-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+    gap: 0;
+    padding: 3% 2% 0 2%;
+}
+
+.project-details-header .Project-year {
+    justify-self: start;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.project-details-header .Project-name {
+    justify-self: start;
+    text-align: left;
+    margin-left: 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+.project-details-header .Project-name .PrjTitle {
+    font-weight: 600;
+}
+
+.project-details-header .Project-number {
+    justify-self: end;
+    align-self: start;
+    text-align: right;
+    font-size: 4rem;
+    font-weight: 300;
+}
+.Project-tags {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0;
 }
