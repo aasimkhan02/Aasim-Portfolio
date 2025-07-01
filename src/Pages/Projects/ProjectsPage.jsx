@@ -20,17 +20,19 @@ const ProjectsPage = () => {
         ))}
       </div>
       <div className="All-Projects">
-        <div className="HealthWave">
-          <img src={HealthWave1} alt="" />
-          <div className="project-details-header">
-            <h1 className='Project-year'>2024</h1>
-            <h1 className="Project-name">
-              <span className='PrjTitle'>HealthWave</span> / Healthcare <br />
-              <span className="Project-tags">Web, Machine learning</span>
-            </h1>
-            <h1 className='Project-number'>01</h1>
+        <div className="Project-row Project-row-single">
+            <div className="HealthWave">
+              <img src={HealthWave1} alt="" className='Healthwaveimg'/>
+              <div className="project-details-header">
+                <h1 className='Project-year'>2024</h1>
+                <h1 className="Project-name">
+                  <span className='PrjTitle'>HealthWave</span> / Healthcare <br />
+                  <span className="Project-tags">Web, Machine learning</span>
+                </h1>
+                <h1 className='Project-number'>01</h1>
+              </div>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   )

@@ -202,7 +202,7 @@ const Home = () => {
                                 </ul>
                             </div>
                         </div>
-                        <img src={healthwave} alt="" className='Project-demo' />
+                        <img src={healthwave} alt="" className='Project-demo' onClick={() => navigate('/projectpage/healthwave')}/>
                     </div>
                     <div className="ModelHQ">
                         <img src={Model} alt="" />
