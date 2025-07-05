@@ -21,16 +21,36 @@ const ProjectsPage = () => {
       </div>
       <div className="All-Projects">
           <div className="Healthwave project">
-
+            <img src={HealthWave1} alt="" />
+            <div className="project-content">
+              <p>2022</p>
+              <p className='Project-name'><span>HealthWave</span> / Healthcare Website</p>
+              <h1>01</h1>
+            </div>
           </div>
           <div className="Modelhq project">
-
+            <img src={HealthWave1} alt="" />
+            <div className="project-content">
+              <p>2022</p>
+              <p className='Project-name'><span>HealthWave</span> / Healthcare Website</p>
+              <h1>01</h1>
+            </div>
           </div>
           <div className="AXWeater project">
-
+            <img src={HealthWave1} alt="" />
+            <div className="project-content">
+              <p>2022</p>
+              <p className='Project-name'><span>HealthWave</span> / Healthcare Website</p>
+              <h1>01</h1>
+            </div>
           </div>
           <div className="QuizElite project">
-            
+            <img src={HealthWave1} alt="" />
+            <div className="project-content">
+              <p>2022</p>
+              <p className='Project-name'><span>HealthWave</span> / Healthcare Website</p>
+              <h1>01</h1>
+            </div>
           </div>
       </div>
     </div>
