@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './ProjectsPage.css'
 import HealthWave1 from './../../assets/healthwave1.jpg'
+import ModelHQ1 from './../../assets/Modelhq.jpg'
 
 const ProjectsPage = () => {
   const [activeCategory, setActiveCategory] = useState('All')
@@ -23,33 +24,33 @@ const ProjectsPage = () => {
           <div className="Healthwave project">
             <img src={HealthWave1} alt="" />
             <div className="project-content">
-              <p>2022</p>
-              <p className='Project-name'><span>HealthWave</span> / Healthcare Website</p>
+              <p>2024</p>
+              <p className='Project-name'><span>HealthWave</span> / Healthcare Website <br /><div className="project-type">Full stack project</div></p>
               <h1>01</h1>
             </div>
           </div>
           <div className="Modelhq project">
-            <img src={HealthWave1} alt="" />
+            <img src={ModelHQ1} alt="" />
             <div className="project-content">
-              <p>2022</p>
-              <p className='Project-name'><span>HealthWave</span> / Healthcare Website</p>
-              <h1>01</h1>
+              <p>2025</p>
+              <p className='Project-name'><span>ModelHQ</span> / ML Models<br /><div className="project-type">Full stack project/ Machine learning</div></p>
+              <h1>02</h1>
             </div>
           </div>
-          <div className="AXWeater project">
+          <div className="AXWeather project">
             <img src={HealthWave1} alt="" />
             <div className="project-content">
               <p>2022</p>
-              <p className='Project-name'><span>HealthWave</span> / Healthcare Website</p>
-              <h1>01</h1>
+              <p className='Project-name'><span>AXWeather</span> / Weather Forecasting <br /><div className="project-type">Full stack project</div></p>
+              <h1>03</h1>
             </div>
           </div>
           <div className="QuizElite project">
             <img src={HealthWave1} alt="" />
             <div className="project-content">
               <p>2022</p>
-              <p className='Project-name'><span>HealthWave</span> / Healthcare Website</p>
-              <h1>01</h1>
+              <p className='Project-name'><span>QuizElite</span> / Online Quiz Platform</p>
+              <h1>04</h1>
             </div>
           </div>
       </div>
