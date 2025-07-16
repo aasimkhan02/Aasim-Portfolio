@@ -80,7 +80,15 @@ const Navbar = () => {
                 ))}
                 <hr className='horizontal-line' />
                 <div className="Resume2">
-                    <h2>Resume <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="arrow-icon" /></h2>
+                    <a
+                        href="./../../../public/assets/Resume.pdf"
+                        download
+                        style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
+                        <h2>
+                            Resume <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="arrow-icon" />
+                        </h2>
+                    </a>  
                 </div>
             </div>
             <div
