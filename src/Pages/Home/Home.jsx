@@ -136,7 +136,7 @@ const Home = () => {
                 </div>
                 <div className="Main-content">
                     {isSmallScreen && (
-                        <li className="tapme">
+                        <li className="tapme" onClick={() => navigate('/aboutpage')}>
                             <h1>Tap to Interact</h1>
                         </li>
                     )}
