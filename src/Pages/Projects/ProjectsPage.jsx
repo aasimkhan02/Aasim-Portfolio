@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './ProjectsPage.css'
 import HealthWave1 from './../../assets/healthwave1.jpg'
 import ModelHQ1 from './../../assets/Modelhq.jpg'
+import Weather2 from './../../assets/Weather2.jpg'
 
 const ProjectsPage = () => {
   const [activeCategory, setActiveCategory] = useState('All')
@@ -38,7 +39,7 @@ const ProjectsPage = () => {
             </div>
           </div>
           <div className="AXWeather project">
-            <img src={HealthWave1} alt="" />
+            <img src={Weather2} alt="" />
             <div className="project-content">
               <p>2022</p>
               <p className='Project-name'><span>AXWeather</span> / Weather Forecasting <br /><div className="project-type">Full stack project</div></p>
