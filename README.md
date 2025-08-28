@@ -1,4 +1,4 @@
-# React Portfolio
+# My Portfolio
 
 A personal portfolio website built with **React** and **Vite** for fast, modern web development.
 
